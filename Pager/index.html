@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <title>Motorolla Pager</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <img
+        src="img/motorola-logo.svg"
+        alt="Motorola logo"
+        class="motorola-logo"
+      />
+      <div class="main-display-box">
+        <div class="main-display">
+          <p class="name">Pager</p>
+          <p id="main-display-el"></p>
+        </div>
+      </div>
+      <div class="second-display-box">
+        <div class="second-display">
+          <p class="phone-label">Phone</p>
+          <p id="phone-display-el"></p>
+          <div class="dial-btns">
+            <p class="dial-btn" id="1-el" onclick="number1()">1</p>
+            <p class="dial-btn" id="2-el" onclick="number2()">2</p>
+            <p class="dial-btn" id="3-el" onclick="number3()">3</p>
+            <p class="dial-btn" id="4-el" onclick="number4()">4</p>
+            <p class="dial-btn" id="5-el" onclick="number5()">5</p>
+            <p class="dial-btn" id="6-el" onclick="number6()">6</p>
+            <p class="dial-btn" id="7-el" onclick="number7()">7</p>
+            <p class="dial-btn" id="8-el" onclick="number8()">8</p>
+            <p class="dial-btn" id="9-el" onclick="number9()">9</p>
+            <p class="dial-btn" id="asterick-el" onclick="numberAsterick()">
+              *
+            </p>
+            <p class="dial-btn" id="0-el" onclick="number0()">0</p>
+            <p class="dial-btn" id="hash-el" onclick="numberHash()">#</p>
+          </div>
+        </div>
+        <button onclick="resetPhone()" class="btn reset-btn">Reset</button>
+        <button onclick="sendPage()" class="btn send-btn">Send</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

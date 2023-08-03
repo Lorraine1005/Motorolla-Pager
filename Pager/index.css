@@ -70,7 +70,7 @@ html {
 }
 /* PHONE */
 .second-display-box {
-  height: 35rem;
+  height: 25rem;
   background-color: #d9d9d9;
   margin-top: 2rem;
   width: 14rem;
@@ -85,18 +85,31 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  row-gap: 0;
+  row-gap: 1rem;
   justify-items: center;
 }
 .dial-btn {
   background-color: #f8f8f8;
   color: #000;
-  padding: 1rem 1.5rem;
+  width: 3rem;
+  height: 2rem;
+  border: 0.5px solid #6f6f6f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.dial-btn:hover,
+.dial-btn:active,
+.dial-btn:focus {
+  border: 3px solid #3d9c7c;
+  outline: none;
+}
+
 .phone-label {
   color: #000;
   margin: 0;
   text-align: center;
+  margin-top: 1rem;
 }
 #phone-display-el {
   background-color: #5f5f5f;
@@ -108,15 +121,39 @@ html {
   align-items: center;
 }
 .btn {
-  border: 1px solid #0b0b0b;
+  border: 2px solid #333;
   padding: 0.5rem;
 }
 .reset-btn {
   background-color: #be482a;
+  margin-top: 1rem;
   color: #f8f8f8;
+}
+.reset-btn:focus,
+.send-btn:focus {
+  border: 2px solid #bc7d7d;
+  outline: none;
 }
 .send-btn {
   margin-top: 1rem;
   background-color: #3d9c7c;
   color: #0b0b0b;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-device-width: 800px) and (max-device-width: 1080px) {
+  html {
+    font-size: 100%;
+  }
+  .page-container {
+    margin-top: 5rem;
+  }
+}
+@media only screen and (min-device-width: 0px) and (max-device-width: 780px) {
+  html {
+    font-size: 150%;
+  }
+  .page-container {
+    margin-top: 5rem;
+  }
 }
